@@ -1,0 +1,9 @@
+header{
+    height: 80px;
+    border: 1px dashed black;
+}
+.sidebar{
+    height: calc(100vh - 80px);
+    border: 1px dashed black;
+    width: 15%;
+}
