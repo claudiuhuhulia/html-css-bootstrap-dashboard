@@ -22,10 +22,25 @@ header{
     border: 1px dashed black;
 }
 .info-students{
-    height: 100px;
     border: 1px dashed black;
+    color: white;
 }
-
+.info-students{
+    background-color: #1b72e8;
+    
+}
+.new-student .btn{
+    border-color: white;
+    color: white;
+    width: 40px;
+    height: 40px; 
+    margin-left: 20px;
+}
+.info-students .badge{
+    background-color: #165bba;
+    font-size: 1rem;
+    font-weight: 400;
+}
 /* RESPONSIVE SIDEBAR */
 @media screen and (min-width: 1200px){
     .sidebar{
