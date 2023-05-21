@@ -3,7 +3,9 @@
 header{
     height: 80px;
     border: 1px dashed black;
-    background-color: #f8f9fa;
+    background-color: white;
+    border-top: 10px solid #f8f9fa;
+    border-bottom: 10px solid #f8f9fa;
 }
 header .form-control, header .input-group-text{
     background-color: #e5e5e5;
@@ -12,8 +14,8 @@ header .form-control, header .input-group-text{
     display: none;
 }
 .logo-small{
-    width: 80px;
-    height: 60px;
+    width: 53px;
+    height: 50px;
 }
 img{
     max-width: 100%;
@@ -23,10 +25,9 @@ nav{
     height: 60px;
     background-color: white;
 }
-.bgc-w{
-    background-color: white;
+.bell i{
+    color: #ff8f00;
 }
-
 .sidebar{
     height: calc(100vh - 80px);
     border: 1px dashed black;
