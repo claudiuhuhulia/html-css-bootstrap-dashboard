@@ -5,10 +5,7 @@ img{
 span{
     display: none;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
 /* HEADER */
 header{
     height: 80px;
@@ -66,6 +63,10 @@ nav{
 }
 .sidebar-nav, .sidebar-settings{
     align-items: center;
+}
+.sidebar a, header a{
+    text-decoration: none;
+    color: white;
 }
 .col{
     border: 1px dashed black;
