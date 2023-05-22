@@ -1,4 +1,14 @@
-
+/* RESET */
+img{
+    max-height: 100%;
+}
+span{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 /* HEADER */
 header{
     height: 80px;
@@ -17,10 +27,7 @@ header .form-control, header .input-group-text{
     width: 53px;
     height: 50px;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 nav{
     height: 60px;
     background-color: white;
@@ -28,24 +35,38 @@ nav{
 .bell i{
     color: #ff8f00;
 }
+
+
+/* SIDEBAR */
 .sidebar{
     height: calc(100vh - 80px);
     border: 1px dashed black;
     width: 80px;
+    background-image: url(img/sidebar-bg.png);
+    background-color: #051e34;
+    align-items: center;
+}
+.sidebar-nav i, .sidebar-settings i{
+    color: white;
+    padding: 10px;
+    width: 50px;
+}
+
+
+.sidebar-nav, .sidebar-settings{
+    height: 120px;
+}
+.sidebar-nav, .sidebar-settings{
+    align-items: center;
+}
+.col{
+    border: 1px dashed black;
 }
 .main{
     border: 1px dashed black;
     height: calc(100vh - 80px);
     width: 100%;
     overflow: auto;
-}
-.sidebar-nav, .sidebar-settings{
-    width: 60px;
-    border: 1px dashed black;
-    height: 60px;
-}
-.col{
-    border: 1px dashed black;
 }
 .info-students{
     border: 1px dashed black;
@@ -68,7 +89,6 @@ nav{
     font-weight: 400;
 }
 
-
 /* RESPONSIVE SIDEBAR */
 @media screen and (min-width: 1200px){
     .sidebar{
@@ -79,5 +99,14 @@ nav{
     }
     .logo-large{
         display: block;
+    }
+    .sidebar-nav, .sidebar-settings{
+        align-items: start;
+    }
+    .sidebar{
+        align-items: start;
+    }
+    span{
+        display: inline;
     }
 }
