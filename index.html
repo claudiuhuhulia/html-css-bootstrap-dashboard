@@ -75,21 +75,19 @@
         <div class="main">
            <div class="info-students">
             <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 col-lg-4 py-3">
-                    <div class="new-student fs-4">
-                        Nuovo studente <button type="button" class="btn"><i class="fa-solid fa-plus"></i></button>
-                    </div>
+            <div class="row h-100 justify-content-between">
+                <div class="col-12 col-lg-3 py-3 new-student fs-5 text-lg-end">       
+                        Nuovo studente <button type="button" class="btn"><i class="fa-solid fa-plus"></i></button>                   
                 </div>
-                    <div class="col-12 col-lg-4 py-3">
-                    <div class="plans fs-1">Boolean <span class="badge rounded-pill ">Piano blaze</span> 
+                    <div class="col-12 col-lg-5 py-3">
+                    <div class="plans fs-2">Boolean <span class="badge rounded-pill ">Piano blaze</span> 
                     <div class="apps d-flex align-items-center">
-                        <span class="badge rounded-pill">3 app</span> <i class="fa-solid fa-angles-right fs-6 px-1"></i><span class="badge rounded-pill "><i class="fa-solid fa-plus fa-2xs"></i></span> 
+                        <span class="badge rounded-pill">3 app</span> <i class="fa-solid fa-angles-right fs-6 px-1"></i><span class="badge rounded-pill d-md-none"><i class="fa-solid fa-plus fa-2xs"></i></span> 
                     </div>
                     </div>
                 </div>
-                    <div class="col-12 col-lg-4 py-3">
-                    <div class="online fs-4">Studenti online negli ultimi 30 minuti</div>
+                    <div class="col-12 col-lg-3 py-3">
+                    <div class="online fs-6">Studenti online negli ultimi 30 minuti</div>
                     <div class="stud-numb fs-1">125</div>
                 </div>
             </div>
@@ -105,32 +103,269 @@
          <h2> Prossime classi</h2>
         </div>
         <div class="card-body">
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th class="w-50 ">Nome</th>
+                    <th class="d-none d-md-table-cell">
+                      Data Inizio
+                    </th>
+                    <th class="d-none d-md-table-cell">
+                      ROI
+                    </th>
+                    <th >Stato</th>
+                    <th class="text-center">Azioni</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class">
+                      <div class="class">
+                        Classe 75
+                      </div></div>
+                      </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
                   </tr>
                   <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 76
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
                   </tr>
                   <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> <div class="class">
+                        Classe 77
+                      </div>
+                    </div>
+                      
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td ><span class="badge bg-warning text-dark">Process</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 78
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 79
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-danger">failed</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 80
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 81
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-danger">failed</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 82
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 83
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 84
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-danger">failed</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td >
+                      <div class="class-img">
+                      <img src="img/class-avatar.jpg" alt="class"> 
+                      <div class="class">
+                      Classe 85
+                    </div>
+                    </div>
+                     
+                    </td>
+                    <td class=" date-start d-none d-md-table-cell">
+                      15 Feb 2021
+                    </td>
+                    <td class="date-start d-none d-md-table-cell">
+                      20%
+                    </td>
+                    <td><span class="badge bg-success">Done</span></td>
+                    <td  class="text-center">
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                    
                   </tr>
                 </tbody>
               </table>
@@ -148,6 +383,38 @@
                   <h2>F.A.Q.</h2>
                 </div>
                 <div class="card-body">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Come aggiungere uno studente?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Come posso accedere alle informazioni del mio conto?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Posso usare questa Dashboard da Mobile?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
         </div>

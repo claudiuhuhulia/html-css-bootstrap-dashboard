@@ -97,6 +97,19 @@ nav{
     font-weight: 400;
 }
 
+/* TABLE CLASS */
+.class-img{
+    height: 38px;
+}
+.date-start{
+    height: 55px;
+} 
+.class{
+    display: inline;
+    padding-left: 10px;
+}
+
+
 /* RESPONSIVE SIDEBAR */
 @media screen and (min-width: 992px){
     .sidebar{
@@ -119,5 +132,9 @@ nav{
     }
     .sidebar-settings{
         justify-content: start;
+    }
+    .new-student{
+        order: 1;
+        width: 250px;
     }
 }
