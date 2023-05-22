@@ -77,7 +77,84 @@
             <div class="container-fluid h-100">
             <div class="row h-100 justify-content-between">
                 <div class="col-12 col-lg-3 py-3 new-student fs-5 text-lg-end">       
-                        Nuovo studente <button type="button" class="btn"><i class="fa-solid fa-plus"></i></button>                   
+                        Nuovo studente <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button> <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <form class="row g-3">
+                              <div class="col-md-6 text-start">
+                                <label for="inputEmail4" class="form-label">Nome</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="col-md-6 text-start">
+                                <label for="inputPassword4" class="form-label">Cognome</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-md-6 text-start">
+                                <label for="inputPassword4" class="form-label">Email</label>
+                                <div class="input-group">
+                                  <div class="input-group-text">@</div>
+                                  <input type="text" class="form-control" id="autoSizingInputGroup" >
+                                </div>
+                              </div>
+                              <div class="col-md-6 text-start">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-md-6 text-start">
+                                <label for="inputPassword4" class="form-label">Indirizzo email</label>
+                                <div class="input-group">
+                                  <div class="input-group-text">@</div>
+                                  <input type="text" class="form-control" id="autoSizingInputGroup" >
+                                </div>
+                              </div>
+                              <div class="col-md-6 text-start">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                              </div>
+                              <div class="col-12 text-start">
+                                <label for="inputAddress" class="form-label">Indirizzo </label>
+                                <input type="text" class="form-control" id="inputAddress" >
+                              </div>
+                              
+                              <div class="col-md-6 text-start">
+                                <label for="inputCity" class="form-label">Città</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                              <div class="col-md-4 text-start">
+                                <label for="inputState" class="form-label">Stato</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Scegli...</option>
+                                  <option>...</option>
+                                </select>
+                              </div>
+                              <div class="col-md-2 text-start">
+                                <label for="inputZip" class="form-label">Cap</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+                              <div class="col-12 text-start">
+                                <label for="inputAddress" class="form-label">Foto </label>
+                                <div class="input-group mb-3">                  
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                 </div>
+                                 </div>
+                              <div class="col-12">
+                                <div class="form-check text-start">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Seleziona per proseguire
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-12 text-start form-btn my-2">
+                                <button type="submit" class="btn btn-primary">Salva</button>
+                                <button type="button" class="btn btn-warning">Svuota</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>                  
                 </div>
                     <div class="col-12 col-lg-5 py-3">
                     <div class="plans fs-2">Boolean <span class="badge rounded-pill ">Piano blaze</span> 
@@ -98,7 +175,7 @@
 <div class="container-fluid">
     <div class="row my-4">
         <div class="col-12 col-xl-9">
-    <div class="card ">
+    <div class="card mb-3">
         <div class="card-header ">
          <h2> Prossime classi</h2>
         </div>
@@ -408,7 +485,7 @@
 
       <!-- STUDENTI ATTIVI -->
 
-      <div class="card align-items-center p-3 ">
+      <div class="card align-items-center p-3 mb-3">
         <div class="card" >
           <img src="img/stats.jpeg" class="card-img-top" alt="stats">
           <div class="card-body">
