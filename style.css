@@ -9,7 +9,6 @@ span{
 /* HEADER */
 header{
     height: 80px;
-    border: 1px dashed black;
     background-color: white;
     border-top: 10px solid #f8f9fa;
     border-bottom: 10px solid #f8f9fa;
@@ -72,13 +71,12 @@ nav{
     border: 1px dashed black;
 }
 .main{
-    border: 1px dashed black;
     height: calc(100vh - 80px);
     width: 100%;
     overflow: auto;
 }
 .info-students{
-    border: 1px dashed black;
+    
     color: white;
 }
 .info-students{
